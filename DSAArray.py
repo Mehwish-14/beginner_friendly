@@ -9,7 +9,7 @@ def longest_subarray_sum(nums, k):
     Returns:
         int: Length of the longest subarray whose sum is equal to k.
     """
-    prefix_sum_index = {0: -1}  # Maps prefix_sum -> earliest index
+    prefix_sum_index = {0: -1}  
     prefix_sum = 0
     max_length = 0
 
