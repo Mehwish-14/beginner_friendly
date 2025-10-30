@@ -1,33 +1,57 @@
-# beginner_friendly
-Hacktoberfest submissions welcome — beginner friendly.
-# Hacktoberfest-Contributions 🎉
+🎉 Hacktoberfest Contributions — Beginner Friendly
 
-Welcome to this **Beginner Friendly Hacktoberfest Repository**!  
-You can contribute simple programs, algorithms, or code snippets in **ANY programming language**.
+Welcome to the Beginner Friendly Hacktoberfest Repository!
+This repository is open for everyone who wants to make their first open-source contribution. You can submit simple programs, algorithms, or code snippets in ANY programming language.
 
-This repo is perfect for:
-- Beginners making their **first PR**
-- Students learning programming
-- Anyone participating in **Hacktoberfest**
+🚀 Perfect For
 
----
+🧑‍💻 Beginners making their first Pull Request (PR)
 
-## 📌 How to Contribute
+🎓 Students learning programming or Data Structures & Algorithms
 
-1. **Star** ⭐ the repository (optional but appreciated!)
-2. **Fork** the repository
-3. Create a **new folder** for your language if it doesn’t exist  
-   Example:dsa code
-4. Add your code file inside the folder  
+🌱 Anyone participating in Hacktoberfest
+
+🛠️ How to Contribute
+
+Star ⭐ the repository (optional but appreciated!)
+
+Fork 🍴 the repository to your account
+
+Clone the forked repository to your local machine:
+
+git clone https://github.com/hafizapatel04-bit/beginner_friendly.git
+
+
+Create a new folder for your language (if it doesn’t exist)
 Example:
-dsa two sum
-5. Commit your changes:
-  GIT ADD .
- GIT COMMIT -M
 
-7. Push and make a **Pull Request**
+/Python
+/C++
+/JavaScript
 
----
+
+Add your code file inside the folder
+Example:
+
+Python/two_sum.py
+C++/bubble_sort.cpp
+DSA/two_sum.cpp
+
+
+Commit your changes:
+
+git add .
+git commit -m "Added Two Sum algorithm in Python"
+
+
+Push your code to GitHub:
+
+git push origin main
+
+
+Go to your forked repo and click “Compare & Pull Request”
+
+Write a short description and submit your Pull Request (PR) 🎉
 
 ## ✅ Rules / Guidelines
 
