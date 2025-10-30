@@ -1,15 +1,27 @@
-def longSubarrSum(nums, k):
-    prefix = {0: -1}  # sum -> index
-    total = 0
-    longest = 0
+def longest_subarray_sum(nums, k):
+    """
+    Returns the length of the longest subarray with sum equal to k.
 
-    for i, n in enumerate(nums):
-        total += n
+    Args:
+        nums (List[int]): List of integers.
+        k (int): Target sum.
 
-        if total - k in prefix:
-            longest = max(longest, i - prefix[total - k])
+    Returns:
+        int: Length of the longest subarray whose sum is equal to k.
+    """
+    prefix_sum_index = {0: -1}  # Maps prefix_sum -> earliest index
+    prefix_sum = 0
+    max_length = 0
 
-        if total not in prefix:
-            prefix[total] = i
+    for i, num in enumerate(nums):
+        prefix_sum += num
 
-    return longest
+        # Check if there exists a prefix_sum such that current_sum - prefix_sum = k
+        if (prefix_sum - k) in prefix_sum_index:
+            max_length = max(max_length, i - prefix_sum_index[prefix_sum - k])
+
+        # Store prefix_sum if not seen before (to ensure longest possible subarray)
+        if prefix_sum not in prefix_sum_index:
+            prefix_sum_index[prefix_sum] = i
+
+    return max_length
