@@ -12,7 +12,6 @@ def longest_subarray_sum(nums, k):
     prefix_sum_index = {0: -1}  
     prefix_sum = 0
     max_length = 0
-
     for i, num in enumerate(nums):
         prefix_sum += num
 
